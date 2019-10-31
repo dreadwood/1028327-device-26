@@ -800,4 +800,273 @@ input[type="radio"].visually-hidden {
 
 
 
+.main-footer{
+  padding: 63px 0 67px 0;
+
+  background-color: #464646;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.footer-logo {
+  margin-top: 2px;
+  margin-right: auto;
+}
+
+.footer-logo[href]:hover,
+.footer-logo[href]:focus {
+  opacity: 0.6;
+}
+
+.footer-logo[href]:active {
+  opacity: 0.3;
+}
+
+.footer-user-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 280px;
+  margin: 0;
+  margin-right: 44px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-link-login,
+.footer-link-profile,
+.footer-link-logout,
+.footer-link-compare,
+.footer-link-basket {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.15px;
+}
+
+.footer-link-logout {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-link-profile {
+  margin-right: 19px;
+}
+
+.footer-link-compare {
+  margin-right: 41px;
+}
+
+.footer-top p {
+  display: inline-block;
+  margin: 0;
+}
+
+.footer-link-login p {
+  margin-left: 9px;
+}
+
+.footer-link-profile p {
+  margin-left: 9px;
+}
+
+.footer-link-compare p {
+  margin-left: 5px;
+}
+
+.footer-link-basket p {
+  margin-left: 6px;
+}
+
+.footer-link-login:hover,
+.footer-link-login:focus,
+.footer-link-profile:hover,
+.footer-link-profile:focus,
+.footer-link-compare:hover,
+.footer-link-compare:focus,
+.footer-link-basket:hover,
+.footer-link-basket:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-link-login:hover path,
+.footer-link-login:focus path,
+.footer-link-profile:hover path,
+.footer-link-profile:focus path,
+.footer-link-compare:hover path,
+.footer-link-compare:focus path,
+.footer-link-basket:hover path,
+.footer-link-basket:focus path {
+  opacity: 0.6;
+}
+
+.footer-link-login:active path,
+.footer-link-profile:active path,
+.footer-link-compare:active path,
+.footer-link-basket:active path {
+  opacity: 0.3;
+}
+
+.footer-link-login:active,
+.footer-link-profile:active,
+.footer-link-compare:active,
+.footer-link-basket:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-link-logout:hover,
+.footer-link-logout:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-link-logout:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-center {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 62px;
+}
+
+.footer-adress {
+  margin: 0;
+  margin-right: 164px;
+}
+
+.footer-adress,
+.footer-tel {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.footer-link-delivery,
+.footer-link-warranty,
+.footer-link-contacts {
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.footer-link-delivery {
+  margin-right: 34px;
+}
+
+.footer-link-warranty {
+  margin-right: 32px;
+}
+
+.footer-link-contacts {
+  margin-right: auto;
+}
+
+.footer-link-delivery:hover,
+.footer-link-delivery:focus,
+.footer-link-warranty:hover,
+.footer-link-warranty:focus,
+.footer-link-contacts:hover,
+.footer-link-contacts:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link-delivery:active,
+.footer-link-warranty:active,
+.footer-link-contacts:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom {
+  position: relative;
+
+  display: flex;
+}
+
+.footer-bottom::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 0px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc600;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  margin: 2px 0 0 509px;
+  padding: 0;
+}
+
+.social-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  font-size: 0;
+
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.facebook-button {
+  margin-right: 23px;
+  background-image: url(../img/icon-fb.svg);
+}
+
+.instagram-button {
+  margin-right: 22px;
+  background-image: url(../img/icon-instagram.svg);
+}
+
+.twitter-button {
+  background-image: url(../img/icon-twitter.svg);
+}
+
+.social-button:hover,
+.social-button:focus {
+  opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.1;
+}
+
+.link-html-academy {
+  display: block;
+  width: 27px;
+  height: 34px;
+  margin-left: auto;
+
+  font-size: 0;
+
+  background-image: url(../img/logo-html.svg);
+  background-repeat: no-repeat;
+}
+
+.link-html-academy:hover,
+.link-html-academy:focus {
+  opacity: 0.6;
+}
+
+.link-html-academy:active {
+  opacity: 0.3;
+}
+
+
 
