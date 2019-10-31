@@ -7,29 +7,41 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
-    <a href="#"><img src="" height="" width="" alt="Логотип компании «Девайс»"></a>
+  <header class="container">
+    <div class="main-header">
 
-    <div>
-      <input type="search" name="q">
-      <a href="#">Войти</a>
-      <a href="#">Сравнить</a>
-      <a href="#">Корзина</a>
+      <a class="logo">
+        <img src="img/logo-device.svg" width="164" height="35" alt="Логотип компании «Девайс»">
+      </a>
+
+      <div class="header-top">
+        <form class="search-box">
+          <input class="search-input" type="search" name="q" autocomplete="off" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+        <ul class="user-actions">
+          <li><a class="link-login" href="#">Войти</a></li>
+        </ul>
+        <a class="link-compare" href="#">Сравнить</a>
+        <a class="link-basket" href="#">Корзина</a>
+      </div>
+
+      <nav class="header-center">
+        <button class="button-disclosure" type="button">Каталог товаров</button>
+        <ul class="catalog-menu">
+          <li><a href="#">Виртуальная реальность </a></li>
+          <li><a href="catalog.html">Моноподы для селфи </a></li>
+          <li><a href="#">Экшн-камеры </a></li>
+          <li><a href="#">Фитнес-браслеты </a></li>
+          <li><a href="#">Умные часы </a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+        </ul>
+        <a class="header-link link-delivery" href="#">Доставка</a>
+        <a class="header-link link-warranty" href="#">Гарантия</a>
+        <a class="header-link link-contacts" href="#">Контакты</a>
+      </nav>
+
     </div>
-    <nav>
-      <button type="button">Каталог товаров:</button>
-      <ul>
-        <li><a href="#"></a>Виртуальная реальность </li>
-        <li><a href="#"></a>Моноподы для селфи </li>
-        <li><a href="#"></a>Экшн-камеры </li>
-        <li><a href="#"></a>Фитнес-браслеты </li>
-        <li><a href="#"></a>Умные часы </li>
-        <li><a href="#"></a>Квадрокоптеры</li>
-      </ul>
-      <a href="#">Доставка</a>
-      <a href="#">Гарантия</a>
-      <a href="#">Контакты</a>
-    </nav>
   </header>
   <main>
     <h1>Главная страница компании «Девайс»</h1>
@@ -41,6 +53,7 @@
         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
         <a href="#">Подробнее</a>
         <h3>Характеристики</h3>
+        <!-- Таблица? -->
         <ul>
           <li>
             <p>8,5 м</p>

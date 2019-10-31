@@ -397,3 +397,407 @@ input[type="radio"].visually-hidden {
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
+
+
+
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+  width: 760px;
+
+  background: rgba(0, 0, 0, 0.08);
+  list-style: none;
+}
+
+.pagination-item {
+  display: block;
+  padding: 23px 0 23px 0;
+
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+.pagination-item[href]:hover,
+.pagination-item[href]:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item[href]:active{
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-item-current {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-item-previous,
+.pagination-item-next {
+  width: 126px;
+
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-item-previous:hover,
+.pagination-item-previous:focus,
+.pagination-item-next:hover,
+.pagination-item-next:focus {
+  width: 126px;
+
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-item-previous:active,
+.pagination-item-next:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-list li:first-child {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.pagination-list li:last-child {
+  margin-left: 0;
+  margin-left: auto;
+}
+
+
+
+
+.main-header {
+  position: relative;
+
+  padding: 21px 56px 40px 59px;
+  background: linear-gradient(transparent 40px, #F8E297 40px);
+}
+
+.logo {
+  display: block;
+  width: 164px;
+  margin-bottom: 10px;
+  margin-left: 1px;
+}
+
+.logo[href]:hover,
+.logo[href]:focus {
+  opacity: 0.6;
+}
+
+.logo[href]:active {
+  opacity: 0.3;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.search-box {
+  margin-right: auto;
+
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 4px 16px;
+}
+
+.search-input {
+  width: 356px;
+  padding: 8px 0 7px 0;
+  padding-left: 39px;
+
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.15px;
+
+  background: transparent;
+  border: none;
+  vertical-align: bottom;
+}
+
+.search-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input:focus {
+  box-shadow: 0 2px 0 0 #000000;
+}
+
+.search-input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-input:focus::placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-button {
+  z-index: -1;
+
+  width: 81px;
+  margin-left: -2px;
+  padding: 7px 0 8px 0;
+
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.15px;
+
+  background: transparent;
+  border: none;
+  box-shadow: 0 0 0 2px #000000;
+  vertical-align: bottom;
+  opacity: 0;
+}
+
+.search-input:focus + .search-button {
+  z-index: 1;
+
+  opacity: 10;
+}
+
+.search-button:hover,
+.search-button:focus {
+  z-index: 1;
+
+  color: #ffffff;
+
+  background: #000000;
+  opacity: 10;
+}
+
+.search-button:active {
+  z-index: 1;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  opacity: 10;
+}
+
+.user-actions {
+  display: flex;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-top a {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.15px;
+}
+
+.link-login,
+.link-profile {
+  padding-left: 30px;
+
+  background-image: url(../img/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: 4px 4px;
+}
+
+.link-profile {
+  margin-right: 20px;
+}
+
+.user-actions .link-logout {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.link-compare {
+  width: 100px;
+  margin-right: 34px;
+
+  text-align: right;
+
+  background-image: url(../img/icon-compare.svg);
+  background-repeat: no-repeat;
+  background-position: 11px 11px;
+}
+
+.link-basket {
+  width: 90px;
+  margin-right: 4px;
+
+  text-align: right;
+  background-image: url(../img/icon-basket.svg);
+  background-repeat: no-repeat;
+  background-position: 7px 9px;
+}
+
+.link-login:hover,
+.link-login:focus,
+.link-compare:hover,
+.link-compare:focus,
+.link-basket:hover,
+.link-basket:focus,
+.link-profile:hover,
+.link-profile:focus {
+  opacity: 0.6;
+}
+
+.link-login:active,
+.link-compare:active,
+.link-basket:active,
+.link-profile:active {
+  opacity: 0.3;
+}
+
+.link-logout:hover,
+.link-logout:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.header-center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-disclosure,
+.header-link {
+  padding: 0;
+
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+
+  background: transparent;
+  border: none;
+}
+
+.button-disclosure {
+  margin-right: auto;
+  padding: 0 28px 10px 0;
+
+  background-image: url(../img/icon-plus.svg);
+  background-repeat: no-repeat;
+  background-position: right 4px;
+}
+
+.link-delivery {
+  margin-right: 34px;
+}
+
+.link-warranty {
+  margin-right: 109px;
+}
+
+.button-disclosure:hover,
+.button-disclosure:focus,
+.header-link:hover,
+.header-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.button-disclosure:active,
+.header-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-disclosure:hover + .catalog-menu,
+.button-disclosure:focus + .catalog-menu {
+  z-index: 10;
+
+  opacity: 1;
+}
+
+.catalog-menu {
+  position: absolute;
+  top: 186px;
+  left: 0;
+  z-index: -1;
+
+  width: 1160px;
+  height: 153px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 11px 40px 10px 60px;
+
+  background-color: #F8E297;
+  list-style: none;
+  opacity: 0;
+}
+
+.catalog-menu:hover,
+.catalog-menu:focus {
+  z-index: 10;
+
+  opacity: 1;
+}
+
+.catalog-menu a {
+  display: block;
+  margin-right: 59px;
+
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.15px;
+}
+
+.catalog-menu a:hover,
+.catalog-menu a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-center:focus-within .catalog-menu {
+  z-index: 10;
+
+  opacity: 1;
+}
+
+/* Очень странный отступ ОТ СЮДА */
+.catalog-menu li:nth-child(5) a {
+  margin-bottom: 25px;
+}
+
+.catalog-menu li:nth-child(4) a {
+  margin-right: 75px;
+}
+/* ДО СЮДА */
+
+
+
+
+
+
+
