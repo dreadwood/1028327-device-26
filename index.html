@@ -67,7 +67,7 @@
               <p class="promo-slogan">Делай селфи, <br>
               как Бен Стиллер!</p>
               <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине.  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
-              <a class="promo-button button-yellow" href="#">Подробнее</a>
+              <a class="promo-button button-yellow" href="catalog.html">Подробнее</a>
 
               <ul class="tech-specs">
                 <li>
@@ -191,7 +191,7 @@
             </div>
             <div class="services-slider">
               <h3 class="services-title">Гарантия</h3>
-              <p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
             </div>
             <div class="services-slider">
               <h3 class="services-title">Кредит</h3>
@@ -302,7 +302,32 @@
       </div>
     </footer>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.52742931598417!3d55.68703098053578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572692643966!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <section class="modal modal-wrire-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-input">
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-input">
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p class="modal-description">
+          <label for="description">Текст письма:</label>
+          <textarea id="description" name="description" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button-yellow" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.52742931598417!3d55.68703098053578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572692643966!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <img src="img/map-big.jpg" width="960" height="559" alt="Карта, адрес магазина: г. Москва, ул. Строителей, 15 ">
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
   </body>
   </html>
