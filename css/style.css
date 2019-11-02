@@ -1890,6 +1890,113 @@ input[type="radio"].visually-hidden {
 
 
 
+/* Modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
 
+  margin: 0 auto;
 
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px 0 #040606;
+  transform: translate(-50%, -50%);
+}
 
+.modal-wrire-us {
+  display: none;
+  width: 960px;
+  height: 553px;
+  padding: 93px 100px 60px 100px;
+}
+
+.modal-wrire-us form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-input,
+.modal-description {
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.modal-input {
+  width: 360px;
+}
+
+.modal-input:first-child {
+  margin-right: 40px;
+}
+
+.modal-input label,
+.modal-description label {
+  display: block;
+  margin-bottom: 7px;
+
+  font-family: "Gilroy", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.modal-input input,
+.modal-description textarea {
+  width: 100%;
+  padding: 15px 21px 17px 21px;
+
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #464646;
+  letter-spacing: 0.25px;
+
+  background-color: #f2f2f2;
+  border: none;
+  resize: none;
+}
+
+.modal-description {
+  width: 760px;
+}
+
+.modal-description textarea {
+  height: 156px;
+}
+
+.modal-button {
+  width: 200px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  background-image: url(../img/modal-close.svg);
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal-map {
+  display: none;
+  width: 960px;
+  height: 559px;
+}
+
+.modal-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
