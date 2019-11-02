@@ -922,11 +922,11 @@ input[type="radio"].visually-hidden {
   height: 160px;
 
   background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .category-item:nth-child(1) .category-img::before {
   background-image: url("../img/popular-1.svg");
+  background-position: center center;
 }
 
 .category-item:nth-child(2) .category-img::before {
@@ -936,18 +936,22 @@ input[type="radio"].visually-hidden {
 
 .category-item:nth-child(3) .category-img::before {
   background-image: url("../img/popular-3.svg");
+  background-position: center center;
 }
 
 .category-item:nth-child(4) .category-img::before {
   background-image: url("../img/popular-4.svg");
+  background-position: center center;
 }
 
 .category-item:nth-child(5) .category-img::before {
   background-image: url("../img/popular-5.svg");
+  background-position: center center;
 }
 
 .category-item:nth-child(6) .category-img::before {
   background-image: url("../img/popular-6.svg");
+  background-position: center center;
 }
 
 .category-title {
@@ -982,9 +986,10 @@ input[type="radio"].visually-hidden {
 .services-sliders {
   position: relative;
 
+  margin-bottom: 94px;
   padding-bottom: 69px;
 
-  background:  linear-gradient(transparent 98px, #e5e5e5 98px);
+  background:  linear-gradient(transparent 99px, #e5e5e5 99px);
 }
 
 .services-sliders-box {
@@ -1082,6 +1087,152 @@ input[type="radio"].visually-hidden {
 }
 
 
+
+
+/* Производители */
+.popular-producer {
+  display: flex;
+  margin: 0;
+  margin-bottom: 84px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular-producer li {
+  width: 260px;
+  margin-right: 40px;
+}
+
+.popular-producer li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.popular-producer img {
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.popular-producer img:hover,
+.popular-producer img:focus {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+
+
+
+/* О компании */
+.about-company {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 52px;
+  padding-bottom: 82px;
+}
+
+.company-box {
+  position: relative;
+
+  width: 475px;
+}
+
+.map-box {
+  position: relative;
+
+  width: 562px;
+}
+
+.company-box:before,
+.map-box:before {
+  content: "";
+
+  position: absolute;
+  top: -52px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
+.map-box:before {
+  left: 2px;
+}
+
+.about-company-title {
+  margin: 0;
+  margin-bottom: 43px;
+
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 46px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+.about-company-text {
+  margin: 0;
+  margin-bottom: 39px;
+
+  font-family: "Open Sans", Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.company-box .about-company-text:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.company-box .about-company-text:nth-of-type(2) {
+  margin-bottom: 66px;
+}
+
+.about-company-list {
+  margin: 0;
+  padding: 0 0 54px 28px;
+
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #000000;
+
+  list-style: none;
+}
+
+.about-company-list li::before {
+  content: "";
+
+  position: relative;
+  top: -1px;
+  left: -27px;
+
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.company-box .button-yellow {
+  width: 260px;
+}
+
+.map-box .button-yellow {
+  width: 260px;
+  margin-left: 2px;
+}
+
+.map-small {
+  display: block;
+  margin-left: 2px;
+  padding-bottom: 60px;
+}
 
 
 
