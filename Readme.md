@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [srg](https://up.htmlacademy.ru/htmlcss/26/user/1028327).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
