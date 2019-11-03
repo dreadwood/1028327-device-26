@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Девайс</title>
+  <title>HTML Academy: Девайс - Главная</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="container">
@@ -15,7 +15,7 @@
       </a>
 
       <div class="header-top">
-        <form class="search-box">
+        <form class="search-box" action="https://echo.htmlacademy.ru" method="get">
           <input class="search-input" type="search" name="q" autocomplete="off" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
@@ -29,12 +29,12 @@
       <nav class="header-center">
         <button class="button-disclosure" type="button">Каталог товаров</button>
         <ul class="catalog-menu">
-          <li><a href="#">Виртуальная реальность </a></li>
+          <li><a href="vr.html">Виртуальная реальность </a></li>
           <li><a href="catalog.html">Моноподы для селфи </a></li>
-          <li><a href="#">Экшн-камеры </a></li>
-          <li><a href="#">Фитнес-браслеты </a></li>
-          <li><a href="#">Умные часы </a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
+          <li><a href="action-cam.html">Экшн-камеры </a></li>
+          <li><a href="fitnes.html">Фитнес-браслеты </a></li>
+          <li><a href="smart-watch.html">Умные часы </a></li>
+          <li><a href="multicopter.html">Квадрокоптеры</a></li>
         </ul>
         <a class="header-link link-delivery" href="#">Доставка</a>
         <a class="header-link link-warranty" href="#">Гарантия</a>
@@ -130,7 +130,7 @@
       <nav>
         <ul class="nav-categories">
           <li class="category-item">
-            <a href="#" title="Виртуальная реальность">
+            <a href="vr.html" title="Виртуальная реальность">
               <div class="category-img"></div>
               <p class="category-title">Виртуальная реальность</p>
             </a>
@@ -142,25 +142,25 @@
             </a>
           </li>
           <li class="category-item">
-            <a href="#" title="Экшн-камеры">
+            <a href="action-cam.html" title="Экшн-камеры">
               <div class="category-img"></div>
               <p class="category-title">Экшн-камеры</p>
             </a>
           </li>
           <li class="category-item">
-            <a href="#" title="Фитнес-браслеты">
+            <a href="fitnes.html" title="Фитнес-браслеты">
               <div class="category-img"></div>
               <p class="category-title">Фитнес-браслеты</p>
             </a>
           </li>
           <li class="category-item">
-            <a href="#" title="Умные часы">
+            <a href="smart-watch.html" title="Умные часы">
               <div class="category-img"></div>
               <p class="category-title">Умные часы</p>
             </a>
           </li>
           <li class="category-item">
-            <a href="#" title="Квадрокоптеры">
+            <a href="multicopter.html" title="Квадрокоптеры">
               <div class="category-img"></div>
               <p class="category-title">Квадрокоптеры</p>
             </a>
@@ -207,22 +207,22 @@
       <ul class="popular-producer">
         <li>
           <a href="https://www.dji.com/ru">
-            <img src="img/logo-1.jpg" width="260" height="100" alt="Сайт DJI">
+            <img src="img/logo-1.jpg" width="260" height="100" alt="Логотип DJI">
           </a>
         </li>
         <li>
           <a href="http://www.sp-gadgets.com">
-            <img src="img/logo-2.jpg" width="260" height="100" alt="Сайт SP gadgets">
+            <img src="img/logo-2.jpg" width="260" height="100" alt="Логотип SP gadgets">
           </a>
         </li>
         <li>
           <a href="https://gopro.ru/">
-            <img src="img/logo-3.jpg" width="260" height="100" alt="Сайт GoPro">
+            <img src="img/logo-3.jpg" width="260" height="100" alt="Логотип GoPro">
           </a>
         </li>
         <li>
           <a href="https://www.vive.com/ru/">
-            <img src="img/logo-4.jpg" width="260" height="100" alt="Сайт Vive">
+            <img src="img/logo-4.jpg" width="260" height="100" alt="Логотип Vive">
           </a>
         </li>
       </ul>
@@ -330,6 +330,6 @@
     <button class="modal-close" type="button">Закрыть</button>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
