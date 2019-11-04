@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -199,7 +199,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 8px 0 8px 0;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -208,25 +208,25 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 3.5px;
 
-  background: -o-linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+  background: -o-linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
 
-  background: linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+  background: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
   border: none;
 }
 
 .button-yellow:hover,
 .button-yellow:focus {
-  background: -o-linear-gradient(transparent 0px, #f0c52e 0px, #f0c52e 40px, transparent 40px);
-  background: linear-gradient(transparent 0px, #f0c52e 0px, #f0c52e 40px, transparent 40px);
+  background: -o-linear-gradient(transparent 0%, #f0c52e 0%, #f0c52e 100%, transparent 100%);
+  background: linear-gradient(transparent 0%, #f0c52e 0%, #f0c52e 100%, transparent 100%);
   cursor: pointer;
 }
 
 .button-yellow:active {
   color: rgba(0, 0, 0, 0.3);
 
-  background: -o-linear-gradient(transparent 0px, #f0c52e 0px, #f0c52e 40px, transparent 40px);
+  background: -o-linear-gradient(transparent 0%, #f0c52e 0%, #f0c52e 100%, transparent 100%);
 
-  background: linear-gradient(transparent 0px, #f0c52e 0px, #f0c52e 40px, transparent 40px);
+  background: linear-gradient(transparent 0%, #f0c52e 0%, #f0c52e 100%, transparent 100%);
 }
 
 .main-header {
@@ -314,6 +314,17 @@ input[type="radio"].visually-hidden {
 
 .search-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.search-input::-ms-clear {
+  display: none;
+}
+
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
+  display: none;
 }
 
 .search-input:focus {
@@ -694,7 +705,7 @@ input[type="radio"].visually-hidden {
   right: 48px;
   z-index: 1;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 179px;
   line-height: 179px;
   font-weight: 800;
@@ -726,14 +737,14 @@ input[type="radio"].visually-hidden {
   z-index: 2;
 
   width: 560px;
-  padding: 79px 50px 10px 0;
+  padding: 79px 50px 60px 0;
 }
 
 .promo-slogan {
   margin: 0;
   margin-bottom: 19px;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 47px;
   line-height: 56px;
   font-weight: 800;
@@ -745,7 +756,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 43px;
 
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -782,7 +793,7 @@ input[type="radio"].visually-hidden {
 .tech-specs p:first-child {
   margin-bottom: 7px;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
@@ -793,7 +804,7 @@ input[type="radio"].visually-hidden {
 .tech-specs p:last-child {
   margin-left: 1px;
 
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -836,6 +847,8 @@ input[type="radio"].visually-hidden {
 }
 
 .category-item {
+  position: relative;
+
   width: 160px;
   margin-right: 40px;
 }
@@ -844,53 +857,60 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.category-img {
+.category-item a::before {
+  content: "";
+
   position: relative;
 
+  display: block;
   width: 160px;
   height: 160px;
   margin-bottom: 33px;
 
   background-color: rgba(240, 197, 46, 0.5);
+  background-repeat: no-repeat;
 }
 
-.category-img::before {
+.category-item a::after {
   content: "";
 
   position: absolute;
+  top: 0;
+  left: 0;
 
+  display: block;
   width: 160px;
   height: 160px;
 
   background-repeat: no-repeat;
 }
 
-.category-item:nth-child(1) .category-img::before {
+.category-item-vr a::after {
   background-image: url("../img/popular-1.svg");
   background-position: 31px 52px;
 }
 
-.category-item:nth-child(2) .category-img::before {
+.category-item-monopod a::after {
   background-image: url("../img/popular-2.svg");
   background-position: 38px 41px;
 }
 
-.category-item:nth-child(3) .category-img::before {
+.category-item-cam a::after {
   background-image: url("../img/popular-3.svg");
   background-position: 49px 38px;
 }
 
-.category-item:nth-child(4) .category-img::before {
+.category-item-fitnes a::after {
   background-image: url("../img/popular-4.svg");
   background-position: 28px 50px;
 }
 
-.category-item:nth-child(5) .category-img::before {
+.category-item-watch a::after {
   background-image: url("../img/popular-5.svg");
   background-position: 55px 32px;
 }
 
-.category-item:nth-child(6) .category-img::before {
+.category-item-multicopter a::after {
   background-image: url("../img/popular-6.svg");
   background-position: 13px 49px;
 }
@@ -898,7 +918,7 @@ input[type="radio"].visually-hidden {
 .category-title {
   margin: 0;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -906,17 +926,13 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.18px;
 }
 
-.category-item:hover .category-img,
-.category-item:focus .category-img,
-.category-item:active .category-img {
+.category-item:hover a::before,
+.category-item:focus a::before,
+.category-item:active a::before {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.category-item:active .category-title {
-  opacity: 0.3;
-}
-
-.category-item:active .category-img::before {
+.category-item:active a::after {
   opacity: 0.3;
 }
 
@@ -987,7 +1003,7 @@ input[type="radio"].visually-hidden {
   margin-left: 1px;
   margin-bottom: 31px;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
@@ -999,7 +1015,7 @@ input[type="radio"].visually-hidden {
   width: 450px;
   margin: 0;
 
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -1038,7 +1054,7 @@ input[type="radio"].visually-hidden {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 84px;
+  margin-bottom: 93px;
   padding: 0;
 
   list-style: none;
@@ -1053,16 +1069,46 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-.popular-producer img {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-  opacity: 0.2;
+.popular-producer a {
+  position: relative;
+
+  display: block;
+  width: 260px;
+  height: 100px;
 }
 
-.popular-producer img:hover,
-.popular-producer img:focus {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+.popular-producer a::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 260px;
+  height: 100px;
+
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.popular-producer a[href*=dji]::after {
+  background-image: url(../img/logo-1.jpg);
+}
+
+.popular-producer a[href*=sp-gadgets]::after {
+  background-image: url(../img/logo-2.jpg);
+}
+
+.popular-producer a[href*=gopro]::after {
+  background-image: url(../img/logo-3.jpg);
+}
+
+.popular-producer a[href*=vive]::after {
+  background-image: url(../img/logo-4.jpg);
+}
+
+.popular-producer a:hover::after,
+.popular-producer a:focus::after {
   opacity: 1;
 }
 
@@ -1110,7 +1156,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 43px;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 46px;
   line-height: 48px;
   font-weight: 800;
@@ -1122,7 +1168,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 39px;
 
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -1141,7 +1187,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0 0 54px 28px;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 800;
@@ -1185,7 +1231,7 @@ input[type="radio"].visually-hidden {
   margin: 37px 0 20px 59px;
   padding: 0;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 800;
@@ -1283,7 +1329,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 23px 20px 23px 61px;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
@@ -1308,12 +1354,27 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-title {
-  font-family: "Gilroy", Tahoma, sans-serif;
+  position: relative;
+
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
   color: #000000;
   letter-spacing: 0.18px;
+}
+
+.filter-title::before {
+  content: "";
+
+  position: absolute;
+  top: -12px;
+  left: 0px;
+
+  width: 201px;
+  height: 2px;
+
+  background-color: #000000;
 }
 
 .range-filter {
@@ -1368,7 +1429,7 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 23px;
   font-weight: 300;
@@ -1400,7 +1461,7 @@ input[type="radio"].visually-hidden {
 .filter-radio label {
   position: relative;
 
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: 300;
@@ -1535,7 +1596,7 @@ input[type="radio"].visually-hidden {
   margin-right: 51px;
   padding: 23px 0px;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 800;
@@ -1565,7 +1626,7 @@ input[type="radio"].visually-hidden {
   display: block;
   padding: 25px 0 27px 0;
 
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1682,7 +1743,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   width: 260px;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -1693,7 +1754,7 @@ input[type="radio"].visually-hidden {
 .item-price {
   margin: 0;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -1736,7 +1797,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
 
-  font-family: "Open Sans", Tahoma, sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -1787,7 +1848,7 @@ input[type="radio"].visually-hidden {
   height: 64px;
   padding: 20px 0 24px 0;
 
-  font-family: "Gilroy", Tahoma, sans-serif;
+  font-family: "Gilroy", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 800;
@@ -2107,7 +2168,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 15px;
-  left: 0px;
+  left: 20px;
 
   width: 80px;
   height: 7px;
@@ -2119,9 +2180,12 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
-  margin: 2px 0 0 509px;
+  margin: 2px 0 0 auto;
   padding: 0;
+  padding-left: 47px;
 
   list-style: none;
 }
@@ -2130,6 +2194,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 32px;
   height: 32px;
+  margin-right: 22px;
 
   font-size: 0;
 
@@ -2143,7 +2208,6 @@ input[type="radio"].visually-hidden {
 }
 
 .instagram-button {
-  margin-right: 22px;
   background-image: url(../img/icon-instagram.svg);
 }
 
